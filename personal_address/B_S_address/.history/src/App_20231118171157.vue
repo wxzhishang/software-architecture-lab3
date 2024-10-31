@@ -1,0 +1,19 @@
+<script setup>
+import Detail from "./components/detail.vue";
+</script>
+
+<template>
+  <div id="container" class="w-full h-full">
+    <div class="w-5/12 bg-teal-400 h-4/6"></div>
+  </div>
+  <Detail msg="Vite + Vue" />
+</template>
+
+<style scoped>
+#container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>

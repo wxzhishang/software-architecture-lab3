@@ -1,0 +1,34 @@
+<script setup>
+import Detail from "./components/detail.vue";
+</script>
+
+<template>
+  <div id="container" class="w-full h-full font-mono font-bold text-zinc-400">
+    <div
+      class="flex flex-col w-4/12 px-4 pb-3 divide-y-4 divide-indigo-300 rounded-lg shadow-2xl bg-zinc-50 h-5/6"
+    >
+      <div class="flex w-full py-4 h-1/6">
+        <img
+          class="relative border-8 border-indigo-400 rounded-full w-28 h-28 border-r-transparent bottom-12"
+          src="https://p26-passport.byteacctimg.com/img/user-avatar/e5e9ab059d24e127c8d7a42cdfc95619~40x40.awebp"
+          alt="avatar"
+        />
+        <div>Liushi_21 通讯录</div>
+      </div>
+      <div class="flex-1 w-full py-4"></div>
+    </div>
+  </div>
+  <Detail msg="Vite + Vue" />
+</template>
+
+<style scoped>
+#container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+</style>

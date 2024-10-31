@@ -1,0 +1,19 @@
+import { createRouter, createWebHashHistory } from "vue-router";
+
+const routes = [
+    {
+        path: "/",
+        name: "list",
+        meta: {
+            title: '通讯录'
+        },
+        components: () => import('@/views/list.vue')
+    }
+]
+
+const rouetr = createRouter({
+    history: createWebHashHistory(),
+    routes
+})
+
+export default rouetr;
